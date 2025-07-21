@@ -145,6 +145,9 @@ div.button1, .button2 p{
     align-items: center;
     width: 100%;
     padding: 40px 0;
+    z-index: 2;
+    pointer-events: none;
+
 }
 
 .message-container{
@@ -162,7 +165,7 @@ div.button1, .button2 p{
     left: 30px;
     rotate: 45deg;
     scale: 0.5;
-    z-index: 2;
+    z-index: 1;
     pointer-events: none;
 }
 
@@ -175,7 +178,7 @@ div.button1, .button2 p{
     rotate: 45deg;
     right: 30px;
     scale: 0.5;
-    z-index: 2;
+    z-index: 1;
     pointer-events: none;
 }
 
@@ -187,6 +190,19 @@ div.button1, .button2 p{
 @media all and (max-width: 900px){
     .message-container{
         width: 100%;
+    }
+    .film{
+        scale: 0.4;
+        height: 70%;
+        width: 240%;
+        margin-left: -260px;
+        margin-top: -550px;
+    }
+    .film1{
+        scale: 0.4;
+        width: 300%;
+        margin-right: -240px;
+        margin-bottom: -440px;
     }
 }
 

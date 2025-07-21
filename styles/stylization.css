@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none
+}
+
+a:active{
+    text-decoration: none
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+.indie-flower-regular {
+  font-family: "Indie Flower", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+html{
+    width: 100vw;
+    height: 100%;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.content{
+    position: relative;
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Kanit', sans-serif;
+    background-image: -webkit-linear-gradient(45deg, hsla(238, 41%, 67%, 1) 0%, hsla(269, 78%, 38%, 1) 50%, hsla(306, 52%, 62%, 1) 100%);
+    background-size: 250%;
+    background-position: left;
+    animation: bg-animation 60s infinite alternate;
+    z-index: 0;
+}
+
+.content::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../media/hearts-bg.png');
+    background-size: 250%;
+    background-position: left;
+    animation: bg-animation 60s infinite alternate;
+    opacity: 50%;
+    z-index: -1;
+}
+
+.spotify-container{
+    width: 30%;
+    padding: 0px 50px 0px 50px;
+}
+
+section.hearts{
+    width: 400px;
+    max-width: 99vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+section.hearts div{
+    cursor: pointer;
+    transition: .4s ease;
+}
+
+section.hearts div:hover{
+    scale: 1.05;
+}
+
+section.hearts  img{
+    width: 22vw;
+    height: 22vw;
+    max-width: 190px;
+    max-height: 190px;
+}
+
+.off-img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+
+h1{
+    font-weight: 700;
+    font-size: 32px;
+    font-style: italic;
+    text-transform: uppercase;
+    color: white;
+}
+
+div.button1, .button2{
+    padding: 5px 10px;
+    cursor: pointer;
+    border: solid 2px white;
+    transition: scale .5s ease;
+}
+
+div.button1:hover, .button2:hover{
+    scale: 1.08;
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+.spotify-button svg{
+    fill: white;
+    transition: fill .3s ease;
+}
+
+.spotify-button svg:hover{
+    fill: #1ed760;
+}
+
+div.button1, .button2 p{
+    font-weight: 700;
+    font-size: 25px;
+    font-style: italic;
+    text-transform: uppercase;
+    color: white;
+}
+
+.message{
+    font-family: "Indie Flower", cursive;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 40px 0;
+}
+
+.message-container{
+    display: flex;
+    width: 20%;
+    padding: 0 40px;
+}
+
+.film{
+    position: absolute;
+    background-image: url('/media/film-roll2.png');
+    width: 200%;
+    height: 100%;
+    background-repeat: no-repeat;
+    left: 30px;
+    rotate: 45deg;
+    scale: 0.5;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.film1{
+    position: absolute;
+    background-image: url('/media/film-roll2.png');
+    width: 220%;
+    height: 100%;
+    background-repeat: no-repeat;
+    rotate: 45deg;
+    right: 30px;
+    scale: 0.5;
+    z-index: 2;
+    pointer-events: none;
+}
+
+@keyframes bg-animation{
+    0%{background-position: left;}
+    100%{background-position: right;}
+}
+
+@media all and (max-width: 900px){
+    .message-container{
+        width: 100%;
+    }
+}
+
+
+/* @media all and (max-width: 550px){
+} */

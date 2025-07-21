@@ -1,0 +1,27 @@
+.content{
+    display: flex;
+    flex-direction: row;
+}
+
+.spotify-button{
+    margin-left: 20px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.spotify-button:hover{
+    scale: 1.1;
+}
+
+
+@media all and (max-width: 900px){
+    .content{
+        flex-direction: column;
+    }
+    .button1,.spotify-container{
+        margin-bottom: 50px;
+    }
+    .spotify-container{
+        width: 60vw;
+    }
+}

@@ -155,7 +155,7 @@ div.button1, .button2 p{
 
 .film{
     position: absolute;
-    background-image: url('/media/film-roll2.png');
+    background-image: url('../media/film-roll2.png');
     width: 200%;
     height: 100%;
     background-repeat: no-repeat;
@@ -168,7 +168,7 @@ div.button1, .button2 p{
 
 .film1{
     position: absolute;
-    background-image: url('/media/film-roll2.png');
+    background-image: url('../media/film-roll2.png');
     width: 220%;
     height: 100%;
     background-repeat: no-repeat;

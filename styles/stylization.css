@@ -104,6 +104,7 @@ h1{
     font-style: italic;
     text-transform: uppercase;
     color: white;
+    text-shadow: 0 5px 4px rgba(0, 0, 0, 0.322);
 }
 
 div.button1, .button2{
@@ -116,6 +117,8 @@ div.button1, .button2{
 div.button1:hover, .button2:hover{
     scale: 1.08;
     background-color: rgba(0, 0, 0, 0.03);
+    text-shadow: 0 1px 6px white;
+
 }
 
 .spotify-button svg{
@@ -125,6 +128,7 @@ div.button1:hover, .button2:hover{
 
 .spotify-button svg:hover{
     fill: #1ed760;
+
 }
 
 div.button1, .button2 p{
@@ -133,6 +137,7 @@ div.button1, .button2 p{
     font-style: italic;
     text-transform: uppercase;
     color: white;
+    transition: all .2s ease;
 }
 
 .message{
@@ -147,7 +152,7 @@ div.button1, .button2 p{
     padding: 40px 0;
     z-index: 2;
     pointer-events: none;
-
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.733);
 }
 
 .message-container{
@@ -192,17 +197,17 @@ div.button1, .button2 p{
         width: 100%;
     }
     .film{
-        scale: 0.4;
-        height: 70%;
-        width: 240%;
-        margin-left: -260px;
-        margin-top: -550px;
+        scale: 0.35;
+        height:350%;
+        width: 340%;
+        margin-left: -720px;
+        margin-top: -220px;
     }
     .film1{
         scale: 0.4;
         width: 300%;
-        margin-right: -240px;
-        margin-bottom: -440px;
+        margin-right: -200px;
+        margin-bottom: -540px;
     }
 }
 

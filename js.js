@@ -7,5 +7,5 @@ button_1.addEventListener("click", () => {
 let spotify_button = document.querySelector('.spotify-button');
 
 spotify_button.addEventListener('click', () => {
-    window.open("https://open.spotify.com/intl-pt/track/6Zq0m2q09khefAnsZWlPr0?si=82c8b33e2e7d4aa6", target="_blank");
+    window.open("https://open.spotify.com/intl-de/track/2plbrEY59IikOBgBGLjaoe?si=67a2c676db144a20", target="_blank");
 });

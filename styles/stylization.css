@@ -159,6 +159,7 @@ div.button1, .button2 p{
     display: flex;
     width: 20%;
     padding: 0 40px;
+    text-align: center
 }
 
 .film{
